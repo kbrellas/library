@@ -14,6 +14,16 @@ public class Product {
     private double price;
     private int noofproduct;
 
+    public Product() {
+    }
+
+    public Product(String pname, String batchno, double price, int noofproduct) {
+        this.pname = pname;
+        this.batchno = batchno;
+        this.price = price;
+        this.noofproduct = noofproduct;
+    }
+
     public int getId() {
         return id;
     }
@@ -51,14 +61,6 @@ public class Product {
     }
 
     public void setNoofproduct(int noofproduct) {
-        this.noofproduct = noofproduct;
-    }
-
-    public Product(int id, String pname, String batchno, double price, int noofproduct) {
-        this.id = id;
-        this.pname = pname;
-        this.batchno = batchno;
-        this.price = price;
         this.noofproduct = noofproduct;
     }
 }
